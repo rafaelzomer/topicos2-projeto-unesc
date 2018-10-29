@@ -11,7 +11,6 @@ public class SqlConnection {
     } catch (ClassNotFoundException e) {
       e.printStackTrace();
     }
-//    jdbc:hsqldb:hsql://localhost/data
-    return DriverManager.getConnection("jdbc:hsqldb:mem:MySpecialTestDb", "sa", "");
+    return DriverManager.getConnection("jdbc:hsqldb:hsql://localhost/topicos2", "sa", "");
   }
 }

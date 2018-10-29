@@ -22,6 +22,9 @@ public abstract class AbstractServlet extends HttpServlet {
     if (tClass == Integer.class) {
       return (T) Integer.valueOf(value.toString());
     }
+    if (tClass == Long.class) {
+      return (T) Long.valueOf(value.toString());
+    }
     if (tClass == Double.class) {
       return (T) Double.valueOf(value.toString());
     }

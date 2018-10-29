@@ -10,13 +10,13 @@
         <a href="/" role="button">Voltar para listagem</a>
         <form action="/salvar" method="POST">
           <h4>
-            Cadastro de
-            <b>anotação</b>
+            <b>Anotação ${id}</b>
           </h4>
           <hr />
+          <input name="codigo" type="hidden" value="${id}" />
           <div class="form-group">
             <label for="descricao">Descrição *</label>
-            <textarea name="descricao" value="${descricao}" type="text" class="form-control" placeholder="Descrição da atividade" required="required"></textarea>
+            <textarea name="descricao" type="text" class="form-control" placeholder="Descrição da atividade" required="required">${descricao}</textarea>
           </div>
           <c:if test="${error != null && !error.trim().isEmpty()}">
             <div class="alert alert-danger" role="alert">

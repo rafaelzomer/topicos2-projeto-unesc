@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_9">
     <output url="file://$MODULE_DIR$/target/topicos2-projeto-unesc-1.0-SNAPSHOT/WEB-INF/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -11,6 +11,14 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: commons-logging:commons-logging-api:1.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
-    <orderEntry type="library" name="Maven: org.hsqldb:hsqldb:2.4.0" level="project" />
+    <orderEntry type="module-library">
+      <library name="Maven: org.hsqldb:hsqldb:1.0.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/data/lib/hsqldb.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
